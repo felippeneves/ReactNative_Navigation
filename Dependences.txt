@@ -1,0 +1,20 @@
+React Navigation
+
+Documentation: https://reactnavigation.org/docs/getting-started
+
+Dependences: 
+    - npm install @react-navigation/native
+    
+    - npm install react-native-reanimated react-native-gesture-handler react-native-screens react-native-safe-area-context @react-native-community/masked-view
+    
+    - Stack
+        * npm install @react-navigation/stack
+
+    - Tab Navigation
+        * npm install @react-navigation/bottom-tabs
+
+    - Drawer Navigation
+        * npm install @react-navigation/drawer
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
