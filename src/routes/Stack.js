@@ -21,14 +21,20 @@ export default props => (
 
         <Stack.Screen name="ScreenB" options={{title: 'Tela B'}} >
             {props => (
-                <StepStack {...props} next="ScreenC">
+                <StepStack {...props} back next="ScreenC">
+                    {/* // nextParams={{number: 1007 }}> */}
                     <ScreenB />
                 </StepStack>
             )}     
         </Stack.Screen>
 
-        <Stack.Screen name="ScreenC" component={ScreenC} > 
-        
+        <Stack.Screen name="ScreenC" options={{title: 'Tela C'}} >
+            {props => (
+                <StepStack {...props} back next="ScreenC">
+                    <ScreenC {...props} />
+                </StepStack>
+            )}     
         </Stack.Screen>
+
     </Stack.Navigator>
 )

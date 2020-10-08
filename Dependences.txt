@@ -18,3 +18,21 @@ Dependences:
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+React Native Vector Icons
+
+Documentation: https://github.com/oblador/react-native-vector-icons
+
+Dependences: 
+    - npm install --save react-native-vector-icons
+
+    - npx react-native link react-native-vector-icons
+
+    - Android
+
+        * Edit android/app/build.gradle ( NOT android/build.gradle ) and add the following:
+
+            -   project.ext.vectoricons = [
+                    iconFontNames: [ 'Ionicons.ttf' ] 
+                ]
+
+                apply from: "../../node_modules/react-native-vector-icons/fonts.gradle"
